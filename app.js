@@ -2,7 +2,7 @@ const GRID_SIZE = 576;
 let numberOfRows = 16;
 let numberofColumns = 16;
 
-const main = document.querySelector('.main-container');
+const main = document.querySelector('.app-container');
 main.addEventListener('mouseover', (e) => {
   if(e.target.className === 'box') {
     e.target.style.backgroundColor = 'red';
@@ -11,7 +11,7 @@ main.addEventListener('mouseover', (e) => {
 
 
 function createGrid(row, column) {
-  const main = document.querySelector('.main-container');
+  const main = document.querySelector('.app-container');
   for (let i = 0; i < row; i++) {
     let gridRow = createGridRow(column);
     main.appendChild(gridRow); 

@@ -10,7 +10,7 @@ body {
   justify-content: center;
 }
 
-.main-container{
+.app-container{
   width: 576px;
   height: 576px;
   border: 0px solid red;
