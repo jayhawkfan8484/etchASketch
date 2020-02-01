@@ -1,0 +1,36 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.main-container{
+  width: 576px;
+  height: 576px;
+  border: 0px solid red;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.row-container {
+  display: flex;
+  justify-content: center;
+  border: 0px solid red;
+  padding: 0 0 0 0;
+}
+
+.box {
+  /* display: inline-block; */
+  width: 36px;
+  height: 36px;
+  border: 1px solid black;
+  /* background-color: red; */
+}
+
