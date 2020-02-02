@@ -2,6 +2,13 @@ const GRID_SIZE = 576;
 let numberOfRows = 16;
 let numberofColumns = 16;
 
+const form = document.querySelector('form');
+form.addEventListener('click', (e) => {
+  if(e.target.id === 'reset') {
+    resetGrid();
+  }
+})
+
 const main = document.querySelector('.app-container');
 main.addEventListener('mouseover', (e) => {
   if(e.target.className === 'box') {
@@ -9,8 +16,19 @@ main.addEventListener('mouseover', (e) => {
   }
 })
 
+function resetGrid(e){
+  while(row = document.querySelector('.row-container')){
+    main.removeChild(row);
+  }
+
+  let inputText = document.querySelector('input[type=number');
+  console.log(inputText.value);
+  createGrid(inputText.value, inputText.value);
+  
+}
 
 function createGrid(row, column) {
+  console.log('createGrid');
   const main = document.querySelector('.app-container');
   for (let i = 0; i < row; i++) {
     let gridRow = createGridRow(column);

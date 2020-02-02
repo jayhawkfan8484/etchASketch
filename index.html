@@ -14,9 +14,9 @@
     </header>
     <div class="input-container">
      <form action="" method="get">
-       Change Grid Size: <input type="text" name="gridSize">
-       <input type="button" value="Enter">
-       <input type="button" value="Reset">
+       <label for="gridSize">Change Grid Size</label>
+       <input type="number" name="gridSize" min="2" max="32" value="16">
+       <input type="button" id="reset" value="Reset">
      </form>
     </div>
     <div class="app-container">
